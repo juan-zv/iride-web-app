@@ -1,0 +1,64 @@
+/* BASE CODE | DO NOT CHANGE  */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #141414;
+    --tertiary-color: #006EB6;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5em;
+    margin: 0.5rem;
+}
+
+section {
+    border-radius: 1em;
+    border: 1px solid var(--primary-color);
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 0.5em;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* STYLES SANDBOX HERE. Please comment with your name and date when creating or modifying styles. */
+
+.nav1 {
+    /* display: flex;
+    justify-content: space-between; */
+    background-color: var(--primary-color);
+    width: 300px;
+    margin: 0 auto;
+}
+
+.nav1 ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}

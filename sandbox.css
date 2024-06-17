@@ -30,9 +30,20 @@ main {
     margin: 0.5rem;
 }
 
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 section {
     border-radius: 1em;
     border: 1px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
 }
 
 header {
@@ -50,8 +61,9 @@ h1 {
     /* display: flex;
     justify-content: space-between; */
     background-color: var(--primary-color);
-    width: 300px;
-    margin: 0 auto;
+    width: 250px;
+    margin: 0 2rem;
+    border-radius: 5px;
 }
 
 .nav1 ul {
@@ -61,4 +73,172 @@ h1 {
     padding: 0;
     margin: 0;
     width: 100%;
+}
+
+.nav1 ul li {
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+
+
+/* NAV 2 */
+
+.nav2 {
+    /* display: flex;
+    justify-content: space-between; */
+    background-color: var(--primary-color);
+    width: 80%;
+    margin: 0 2rem;
+    border-radius: 2rem;
+}
+
+.nav2 ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.nav2 ul li {
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+
+/* ---------------------------------------CARDS--------------------------------------- */
+
+.card {
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 200px;
+}
+
+
+
+/* CARD 1 */
+
+.post {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    width: 350px;
+}
+
+.post img {
+    filter: invert();
+    align-self: center;
+    justify-self: center;
+}
+
+.post h3 {
+    grid-column: 2/4;
+}
+
+.post .card-from {
+    grid-column: 1;
+    width: 150%;
+}
+
+.post .card-to {
+    grid-column: 3;
+    width: 150%;
+}
+
+.post .card-date {
+    grid-column: 1;
+}
+
+.post .card-details {
+    grid-column: 2/4;
+}
+
+.post #card-price {
+    grid-column: 1/4;
+
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    font-family: 'Righteous', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+
+    &:hover {
+        background-color: var(--tertiary-color);
+        color: var(--primary-color);
+    }
+}
+
+
+
+/* CARD 2 */
+
+.post2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.post2 img {
+    filter: invert();
+    align-self: center;
+    justify-self: center;
+}
+
+.post2 h3 {
+    grid-column: 2/4;
+}
+
+.post2 .card-from {
+    grid-column: 1/4;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    padding: 0.5rem;
+    border-radius: 1rem;
+
+    margin: 0.25rem auto;
+}
+
+.post2 .card-to {
+    grid-column: 1/4;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    padding: 0.5rem;
+    border-radius: 1rem;
+
+    margin: 0.25rem auto;
+}
+
+.post2 .card-date {
+    grid-column: 1;
+    align-self: center;
+}
+
+.post2 .card-details {
+    grid-column: 2/4;
+}
+
+.post2 #card-price-2 {
+    grid-column: 2;
+
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    font-family: 'Righteous', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+
+    &:hover {
+        background-color: var(--tertiary-color);
+        color: var(--primary-color);
+    }
 }
